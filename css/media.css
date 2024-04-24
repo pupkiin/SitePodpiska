@@ -5,7 +5,38 @@
   }
 
   .header__nav {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px 100px;
+  }
+
+  .portfolio__title_block {
+    margin-bottom: 150px;
+  }
+
+  .tarif__contact_title {
+    font-size: 32px;
+  }
+
+  .tarif__contact_descr {
+    font-size: 18px;
+  }
+
+  .portfolio__section {
+    height: 250vh;
+  }
+
+  .tarif__section {
+    height: 185vh;
+  }
+
+  .pages__item_blur {
+    font-size: 50px;
+  }
+
+  .pages__item_title span {
+    font-size: 70px;
+  }
+
+  .questions__item_text {
+    font-size: 14px;
   }
 }

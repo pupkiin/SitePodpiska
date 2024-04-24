@@ -1,4 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
+let navPaddingTop = 40;
+let width = document.documentElement.clientWidth;
+if (width < 1750) {
+  navPaddingTop = 20;
+}
 
 if (ScrollTrigger.isTouch !== 1) {
   // header
@@ -9,12 +14,6 @@ if (ScrollTrigger.isTouch !== 1) {
       start: "200",
       end: 'bottom -130%+=100px',
       scrub: true,
-      // snap: {
-      //   snapTo: "labels", // snap to the closest label in the timeline
-      //   duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-      //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-      //   ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
-      // },
     }
   })
   // header title
@@ -29,16 +28,11 @@ if (ScrollTrigger.isTouch !== 1) {
   })
   // header container
   gsap.fromTo('.header__container', {}, {
-    'padding-top': 40,
-    'padding-bottom': 40,
+    'padding-top': navPaddingTop,
+    'padding-bottom': navPaddingTop,
     // 'background-color': '#0D0D0D',
     scrollTrigger: {
       trigger: '.portfolio__title_text',
-      // start: 'bottom -105%',
-      // end: 'bottom -155%+=100',
-      // start: "bottom -155%+=100",
-      // end: 'bottom -170%+=100px',
-      // start: 'bottom 25%',
       end: 'center 55%+=100',
       scrub: true,
     }
@@ -152,7 +146,7 @@ if (ScrollTrigger.isTouch !== 1) {
     scrollTrigger: {
       trigger: '.portfolio__works_list',
       start: 'top 75%',
-      end: 'bottom 120%',
+      end: 'bottom 125%',
       scrub: true,
     }
   })  
@@ -448,7 +442,7 @@ if (ScrollTrigger.isTouch !== 1) {
     scrollTrigger: {
       trigger: '.pages__section',
       // start: 'top 53%',
-      end: 'bottom 155%',
+      end: 'bottom 95%',
       scrub: true,
     }
   }) 
@@ -606,7 +600,7 @@ if (ScrollTrigger.isTouch !== 1) {
 
   // first item text animation
   gsap.fromTo('.tezis__item_list', { y: 500, opacity: 0.7 }, {
-    opacity: 1, y: -500,
+    opacity: 1, y: -600,
     scrollTrigger: {
       trigger: '.tezis__item_1',
       end: 'bottom 10%+=100',
@@ -631,7 +625,7 @@ if (ScrollTrigger.isTouch !== 1) {
 
   // title lines
   gsap.fromTo('.questions__title_left', {}, {
-    left: '-78vw',
+    left: '-85vw',
     scrollTrigger: {
       trigger: '.questions__title_center',
       start: 'bottom 104%',
@@ -641,7 +635,7 @@ if (ScrollTrigger.isTouch !== 1) {
   })
 
   gsap.fromTo('.questions__title_right', {}, {
-    right: '-78vw',
+    right: '-85vw',
     scrollTrigger: {
       trigger: '.questions__title_center',
       start: 'bottom 104%',
@@ -683,15 +677,15 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   }) 
   // questions item text
-  gsap.fromTo('.questions__item_text', { opacity: 0, y: 500 }, {
-    opacity: 1, y: 0,
-    scrollTrigger: {
-      trigger: '.questions__title_block',
-      start: 'top 60%',
-      // end: 'bottom 170%',
-      scrub: true,
-    }
-  }) 
+  // gsap.fromTo('.questions__item_text', { opacity: 0, y: 500 }, {
+  //   opacity: 1, y: 0,
+  //   scrollTrigger: {
+  //     trigger: '.questions__title_block',
+  //     start: 'top 60%',
+  //     // end: 'bottom 170%',
+  //     scrub: true,
+  //   }
+  // }) 
 
   // bye
   gsap.fromTo('.questions__block', { opacity: 1 }, {
