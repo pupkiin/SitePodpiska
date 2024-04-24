@@ -1,0 +1,11 @@
+@media (max-width: 1750px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .header__nav {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

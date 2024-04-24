@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт "По Подписке"</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="scene">
+      <header class="header">
+        <div class="header__layer_1"></div>
+        <nav class="header__nav nav header__container">
+          <ul class="nav__list_left">
+            <li class="nav__item_left nav__logo">
+              <a href="/" class="nav__link">
+                <figure class="nav__figure">
+                  <picture class="nav__picture">
+                    <img
+                      src="./src/logo.png"
+                      alt=""
+                      class="nav__img nav__logo_img"
+                    />
+                  </picture>
+                </figure>
+              </a>
+            </li>
+            <li class="nav__item_left nav__site">
+              <a href="/" class="nav__link">Сайт</a>
+            </li>
+            <li class="nav__item_left nav__seo">
+              <a href="/" class="nav__link">Seo</a>
+            </li>
+            <li class="nav__item_left nav__ads">
+              <a href="/" class="nav__link">Реклама</a>
+            </li>
+          </ul>
+          <ul class="header__list_right">
+            <li class="nav__item_right">
+              <a href="/" class="nav__tg">
+                <svg
+                  class="svg__tg"
+                  width="39"
+                  height="33"
+                  viewBox="0 0 39 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35.1473 0.68687C30.0824 2.80238 8.35761 11.8727 2.35462 14.3458C-1.66947 15.9299 0.683995 17.4138 0.683995 17.4138C0.683995 17.4138 4.12138 18.6002 7.06486 19.4925C10.0084 20.3848 11.5795 19.3922 11.5795 19.3922L25.4219 9.98776C30.331 6.62233 29.1543 9.39287 27.9742 10.5826C25.4219 13.156 21.1989 17.2132 17.6654 20.4818C16.0942 21.8687 16.8798 23.0551 17.5693 23.65C20.1216 25.829 27.0925 30.2839 27.4836 30.578C29.5587 32.0586 33.6391 34.1908 34.259 29.6857L36.7119 14.1452C37.4975 8.89825 38.2831 4.04896 38.3825 2.66201C38.6775 -0.703417 35.144 0.683528 35.144 0.683528L35.1473 0.68687Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item_right">
+              <a href="/" class="nav__wa">
+                <svg
+                  class="svg__wa"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M35.7999 17.3474C35.7999 26.8139 28.0637 34.4936 18.5205 34.4936C15.4914 34.4936 12.6438 33.7192 10.1672 32.3599L0.599854 35.4012L3.71772 26.2009C2.14467 23.6154 1.24117 20.5863 1.24117 17.3474C1.24117 7.87685 8.97735 0.201172 18.5205 0.201172C28.0637 0.201172 35.7999 7.87685 35.7999 17.3474ZM18.5205 2.93182C10.5101 2.93182 3.99199 9.39746 3.99199 17.3474C3.99199 20.5016 5.02052 23.4218 6.75894 25.7975L4.94389 31.1499L10.5262 29.3752C12.8212 30.8797 15.568 31.759 18.5205 31.759C26.531 31.759 33.045 25.2933 33.045 17.3434C33.045 9.39343 26.5269 2.92779 18.5205 2.92779V2.93182ZM27.2449 21.2962C27.136 21.1187 26.8536 21.0138 26.4342 20.8041C26.0106 20.5943 23.9253 19.5779 23.5381 19.4367C23.1509 19.2956 22.8645 19.227 22.5862 19.6465C22.3039 20.066 21.4932 21.0138 21.2431 21.2962C20.9971 21.5785 20.751 21.6108 20.3275 21.401C19.904 21.1913 18.5366 20.7476 16.9192 19.3157C15.6608 18.1985 14.8097 16.8271 14.5637 16.4036C14.3176 15.9841 14.5395 15.7582 14.7492 15.5485C14.9388 15.3589 15.1727 15.0564 15.3865 14.8144C15.6003 14.5684 15.6689 14.3909 15.81 14.1126C15.9512 13.8302 15.8826 13.5882 15.7737 13.3785C15.6689 13.1687 14.8218 11.0996 14.4669 10.2566C14.116 9.41763 13.761 9.44989 13.515 9.44989C13.2689 9.44989 12.8132 9.5225 12.8132 9.5225C12.8132 9.5225 11.9661 9.62737 11.5749 10.0468C11.1877 10.4663 10.0946 11.4828 10.0946 13.5519C10.0946 15.6211 11.6112 17.6177 11.8209 17.896C12.0347 18.1783 14.7492 22.5586 19.057 24.2406C23.3647 25.9225 23.3647 25.3619 24.1391 25.2893C24.9135 25.2207 26.6439 24.2729 26.9988 23.2927C27.3538 22.3126 27.3538 21.4696 27.2489 21.2962H27.2449Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="header__block">
+            <h1 class="header__title">
+              <span class="header__title_top">Сайт</span>
+              <span class="header__title_bottom">
+                <span class="header__title_arrow">&#171;</span> по подписке
+                <span class="header__title_arrow">&#187;</span></span
+              >
+            </h1>
+            <p class="header__descr">
+              Ваш беспроигрышный инструмент для запуска бизнеса в интернете
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main class="main">
+      <section class="section portfolio__section">
+        <div class="portfolio__container">
+          <p class="portfolio__descr">
+            Мы создали много разнообразных сайтов и подписка позволяет запустить
+            все их типы: корпоративные сайты с блогом или новостным разделом,
+            личный сайт, витрины, визитки, портфолио и многие другие, как
+            <span style="font-weight: 700">одностраничные</span>, так и
+            <span style="font-weight: 700">многостраничные</span>.
+          </p>
+          <div class="portfolio__title_block">
+            <div class="portfolio__title">
+              <h2 class="portfolio__title_text">
+                <span class="portfolio__title_left"></span>
+                <span class="portfolio__title_center">Портфолио</span>
+                <span class="portfolio__title_right"></span>
+              </h2>
+            </div>
+          </div>
+          <div class="portfolio__block container">
+            <div class="portfolio__button_block">
+              <button class="portfolio__button_left">
+                <span class="portfolio__button_text">Категория</span>
+                <svg
+                  class="portfolio__button_svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_di_381_608)">
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="14.5"
+                      stroke="white"
+                      shape-rendering="crispEdges"
+                    />
+                  </g>
+                  <path
+                    d="M27.7804 24.5303C28.0733 24.2374 28.0733 23.7626 27.7804 23.4697L23.0075 18.6967C22.7146 18.4038 22.2397 18.4038 21.9468 18.6967C21.6539 18.9896 21.6539 19.4645 21.9468 19.7574L26.1894 24L21.9468 28.2426C21.6539 28.5355 21.6539 29.0104 21.9468 29.3033C22.2397 29.5962 22.7146 29.5962 23.0075 29.3033L27.7804 24.5303ZM27.25 24.75H27.2501V23.25H27.25V24.75Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_di_381_608"
+                      x="0"
+                      y="0"
+                      width="50"
+                      height="50"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="1" />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_381_608"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_381_608"
+                        result="shape"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="4" dy="4" />
+                      <feGaussianBlur stdDeviation="3" />
+                      <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect2_innerShadow_381_608"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+              <button class="portfolio__button_right">
+                <span class="portfolio__button_text">Тематика</span>
+                <svg
+                  class="portfolio__button_svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_di_381_618)">
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="14.5"
+                      transform="rotate(90 24 24)"
+                      stroke="white"
+                      shape-rendering="crispEdges"
+                    />
+                  </g>
+                  <path
+                    d="M23.4697 27.7804C23.7626 28.0733 24.2374 28.0733 24.5303 27.7804L29.3033 23.0075C29.5962 22.7146 29.5962 22.2397 29.3033 21.9468C29.0104 21.6539 28.5355 21.6539 28.2426 21.9468L24 26.1894L19.7574 21.9468C19.4645 21.6539 18.9896 21.6539 18.6967 21.9468C18.4038 22.2397 18.4038 22.7146 18.6967 23.0075L23.4697 27.7804ZM23.25 27.25L23.25 27.2501L24.75 27.2501L24.75 27.25L23.25 27.25Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_di_381_618"
+                      x="0"
+                      y="0"
+                      width="50"
+                      height="50"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="1" />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_381_618"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_381_618"
+                        result="shape"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="4" dy="4" />
+                      <feGaussianBlur stdDeviation="3" />
+                      <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect2_innerShadow_381_618"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <ul class="portfolio__types_list">
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/med.png"
+                      alt="Медицина"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Медицина</span>
+              </li>
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/hor.png"
+                      alt="Horeca"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Horeca</span>
+              </li>
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/tour.png"
+                      alt="Туризм"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Туризм</span>
+              </li>
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/beauty.png"
+                      alt="Красота"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Красота</span>
+              </li>
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/prom.png"
+                      alt="Промышленность"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Промышленность</span>
+              </li>
+              <li class="portfolio__types_item">
+                <figure class="portfolio__figure">
+                  <picture class="portfolio__picture">
+                    <img
+                      src="./src/over.png"
+                      alt="Другое"
+                      class="portfolio__img"
+                    />
+                  </picture>
+                </figure>
+                <span class="portfolio__types_text">Другое</span>
+              </li>
+            </ul>
+
+            <ul class="portfolio__works_list">
+              <li class="portfolio__works_item portfolio__works_item_1">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port1.png"
+                      alt="1"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+              <li class="portfolio__works_item portfolio__works_item_2">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port2.png"
+                      alt="2"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+              <li class="portfolio__works_item portfolio__works_item_3">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port3.png"
+                      alt="3"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+              <li class="portfolio__works_item portfolio__works_item_4">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port4.png"
+                      alt="4"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+              <li class="portfolio__works_item portfolio__works_item_5">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port5.png"
+                      alt="5"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+              <li class="portfolio__works_item portfolio__works_item_6">
+                <figure class="portfolio__work_figure">
+                  <picture class="portfolio__work_picture">
+                    <img
+                      src="./src/port6.png"
+                      alt="6"
+                      class="portfolio__work_img"
+                    />
+                  </picture>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section unique__section">
+        <div class="unique__block">
+          <ul class="unique__list">
+            <li class="unique__item unique_1 container">
+              <div class="unique__text_block unique_text_block_1">
+                <h3 class="unique__title">Уверенность</h3>
+                <p class="unique__descr">
+                  Мы решаем все технические проблемы, включая регистрацию,
+                  оплату доменов, хостинга и SSL-сертификата. Просто
+                  расслабьтесь и ни за что не переживайте.
+                </p>
+              </div>
+            </li>
+            <li class="unique__item unique_2 container">
+              <div class="unique__text_block unique_text_block_2">
+                <h3 class="unique__title">Уникальность</h3>
+                <p class="unique__descr">
+                  Несмотря на огромный бэкграунд, каждый новый сайт имеет
+                  индивидуальный дизайн. Удобная структура сайтов уже продумана,
+                  но набор блоков и страниц составлен с учетом вашей тематики и
+                  пожеланий.
+                </p>
+              </div>
+            </li>
+            <li class="unique__item unique_3 container">
+              <div class="unique__text_block unique_text_block_3">
+                <h3 class="unique__title">Обновление</h3>
+                <p class="unique__descr">
+                  Мы обеспечиваем регулярное обновление контента, добавление
+                  новостей клиента, акционных слайдов и другого материала.
+                  Просто дайте знать, что вам нужно разместить.
+                </p>
+              </div>
+            </li>
+            <li class="unique__item unique_4 container">
+              <div class="unique__text_block unique_text_block_4">
+                <h3 class="unique__title">Контроль</h3>
+                <p class="unique__descr">
+                  Наши сайты проходят еженедельный мониторинг и проверку на
+                  наличие технических неисправностей, обеспечивая их стабильную
+                  работу. Занимайтесь своими делами спокойно.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section tarif__section">
+        <!-- <figure class="tarif__figure">
+          <picture class="tarif__picture">
+            <img src="./src/tarif-bg.png" alt="" class="tarif__img" />
+          </picture>
+        </figure> -->
+        <div class="tarif__title_block">
+          <div class="tarif__title">
+            <h2 class="tarif__title_text">
+              <span class="tarif__title_left"></span>
+              <span class="tarif__title_center">Тарифы</span>
+              <span class="tarif__title_right"></span>
+            </h2>
+          </div>
+        </div>
+        <div class="container tarif__container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide__1">
+                <div class="swiper__block">
+                  <img
+                    src="./src/tarif-11.png"
+                    alt="Тариф PRO"
+                    class="tarif__swiper_img"
+                  />
+                  <h3 class="slide__title">Pro</h3>
+                  <div class="slide__text_block">
+                    <p class="slide__text" style="margin-bottom: 12px;">Многостраничный сайт с ограничением на количество страниц и блоков на каждой странице</p>
+                    <p class="slide__text">Максимум 4 страницы и 16 блоков</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide__2">
+                <div class="swiper__block">
+                  <img
+                    src="./src/tarif-12.png"
+                    alt="Тариф PROMAX"
+                    class="tarif__swiper_img"
+                  />
+                  <h3 class="slide__title">Promax</h3>
+                  <div class="slide__text_block">
+                    <p class="slide__text">Многостраничный сайт с возможностью значительного расширения числа страниц и блоков.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide__3">
+                <div class="swiper__block">
+                  <img
+                    src="./src/tarif-13.png"
+                    alt="Тариф OPTIMAL"
+                    class="tarif__swiper_img"
+                  />
+                  <h3 class="slide__title">Optimal</h3>
+                  <div class="slide__text_block">
+                    <p class="slide__text" style="margin-bottom: 12px;">Одностраничный сайт: ограничение по количеству блоков.</p>
+                    <p class="slide__text" style="text-transform: uppercase;">Максимум 10 блоков</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <div class="tarif__contact">
+            <h4 class="tarif__contact_title">связаться с менеджером</h4>
+            <ul class="tarif__contact_list">
+              <li class="tarif__contact_item">
+                <a href="/" class="tarif__contact_tg">
+                  <svg
+                    class="tarif__svg_tg"
+                    width="39"
+                    height="33"
+                    viewBox="0 0 39 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M35.1473 0.68687C30.0824 2.80238 8.35761 11.8727 2.35462 14.3458C-1.66947 15.9299 0.683995 17.4138 0.683995 17.4138C0.683995 17.4138 4.12138 18.6002 7.06486 19.4925C10.0084 20.3848 11.5795 19.3922 11.5795 19.3922L25.4219 9.98776C30.331 6.62233 29.1543 9.39287 27.9742 10.5826C25.4219 13.156 21.1989 17.2132 17.6654 20.4818C16.0942 21.8687 16.8798 23.0551 17.5693 23.65C20.1216 25.829 27.0925 30.2839 27.4836 30.578C29.5587 32.0586 33.6391 34.1908 34.259 29.6857L36.7119 14.1452C37.4975 8.89825 38.2831 4.04896 38.3825 2.66201C38.6775 -0.703417 35.144 0.683528 35.144 0.683528L35.1473 0.68687Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="tarif__contact_item">
+                <a href="/" class="tarif__contact_wa">
+                  <svg
+                    class="tarif__svg_wa"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M35.7999 17.3474C35.7999 26.8139 28.0637 34.4936 18.5205 34.4936C15.4914 34.4936 12.6438 33.7192 10.1672 32.3599L0.599854 35.4012L3.71772 26.2009C2.14467 23.6154 1.24117 20.5863 1.24117 17.3474C1.24117 7.87685 8.97735 0.201172 18.5205 0.201172C28.0637 0.201172 35.7999 7.87685 35.7999 17.3474ZM18.5205 2.93182C10.5101 2.93182 3.99199 9.39746 3.99199 17.3474C3.99199 20.5016 5.02052 23.4218 6.75894 25.7975L4.94389 31.1499L10.5262 29.3752C12.8212 30.8797 15.568 31.759 18.5205 31.759C26.531 31.759 33.045 25.2933 33.045 17.3434C33.045 9.39343 26.5269 2.92779 18.5205 2.92779V2.93182ZM27.2449 21.2962C27.136 21.1187 26.8536 21.0138 26.4342 20.8041C26.0106 20.5943 23.9253 19.5779 23.5381 19.4367C23.1509 19.2956 22.8645 19.227 22.5862 19.6465C22.3039 20.066 21.4932 21.0138 21.2431 21.2962C20.9971 21.5785 20.751 21.6108 20.3275 21.401C19.904 21.1913 18.5366 20.7476 16.9192 19.3157C15.6608 18.1985 14.8097 16.8271 14.5637 16.4036C14.3176 15.9841 14.5395 15.7582 14.7492 15.5485C14.9388 15.3589 15.1727 15.0564 15.3865 14.8144C15.6003 14.5684 15.6689 14.3909 15.81 14.1126C15.9512 13.8302 15.8826 13.5882 15.7737 13.3785C15.6689 13.1687 14.8218 11.0996 14.4669 10.2566C14.116 9.41763 13.761 9.44989 13.515 9.44989C13.2689 9.44989 12.8132 9.5225 12.8132 9.5225C12.8132 9.5225 11.9661 9.62737 11.5749 10.0468C11.1877 10.4663 10.0946 11.4828 10.0946 13.5519C10.0946 15.6211 11.6112 17.6177 11.8209 17.896C12.0347 18.1783 14.7492 22.5586 19.057 24.2406C23.3647 25.9225 23.3647 25.3619 24.1391 25.2893C24.9135 25.2207 26.6439 24.2729 26.9988 23.2927C27.3538 22.3126 27.3538 21.4696 27.2489 21.2962H27.2449Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="tarif__contact_descr">
+              *Тарифы могут быть как единовременными, так и ежемесячными.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section pages__section">
+        <div class="pages__block">
+          <ul class="pages__list">
+            <li class="pages__item pages__item_1 container">
+              <a href="/" class="pages__item_link pages__item_link_left">
+                <div class="pages__item_blur pages__item_blur_1">
+                  <span>Хочу узнать про</span>
+                </div>
+                <div class="pages__item_title_block">
+                  <h3 class="pages__item_title">
+                    <span>Рекламу</span>
+                    <svg
+                      width="70"
+                      height="70"
+                      viewBox="0 0 70 70"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#filter0_bdi_443_243)">
+                        <circle
+                          cx="33"
+                          cy="33"
+                          r="25"
+                          fill="white"
+                          fill-opacity="0.2"
+                          shape-rendering="crispEdges"
+                        />
+                        <circle
+                          cx="33"
+                          cy="33"
+                          r="24.5"
+                          stroke="white"
+                          shape-rendering="crispEdges"
+                        />
+                      </g>
+                      <path
+                        d="M36.7072 33.7071C37.0977 33.3166 37.0977 32.6834 36.7072 32.2929L30.3432 25.9289C29.9527 25.5384 29.3196 25.5384 28.929 25.9289C28.5385 26.3195 28.5385 26.9526 28.929 27.3431L34.5859 33L28.929 38.6569C28.5385 39.0474 28.5385 39.6805 28.929 40.0711C29.3196 40.4616 29.9527 40.4616 30.3432 40.0711L36.7072 33.7071ZM36 34H36.0001V32H36V34Z"
+                        fill="white"
+                      />
+                      <defs>
+                        <filter
+                          id="filter0_bdi_443_243"
+                          x="0"
+                          y="0"
+                          width="70"
+                          height="70"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feGaussianBlur
+                            in="BackgroundImageFix"
+                            stdDeviation="2"
+                          />
+                          <feComposite
+                            in2="SourceAlpha"
+                            operator="in"
+                            result="effect1_backgroundBlur_443_243"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dx="2" dy="2" />
+                          <feGaussianBlur stdDeviation="5" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="effect1_backgroundBlur_443_243"
+                            result="effect2_dropShadow_443_243"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect2_dropShadow_443_243"
+                            result="shape"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dx="3.10909" dy="3.10909" />
+                          <feGaussianBlur stdDeviation="2.33182" />
+                          <feComposite
+                            in2="hardAlpha"
+                            operator="arithmetic"
+                            k2="-1"
+                            k3="1"
+                          />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="shape"
+                            result="effect3_innerShadow_443_243"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </h3>
+                  <ul class="pages__item_list">
+                    <li class="pages__item_item">
+                      <img src="./src/yandexbisnes.png" alt="Яндекс Бизнес" />
+                    </li>
+                    <li class="pages__item_item">
+                      <img src="./src/yandex.png" alt="Яндекс Директ" />
+                    </li>
+                    <li class="pages__item_item">
+                      <img src="./src/mytarget.png" alt="Mytarget" />
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="pages__item pages__item_2 container">
+              <a href="/" class="pages__item_link pages__item_link_right">
+                <div class="pages__item_blur pages__item_blur_2">
+                  <span>Хочу узнать про</span>
+                </div>
+                <div class="pages__item_title_block">
+                  <h3 class="pages__item_title">
+                    <span>Seo</span>
+                    <svg
+                      width="70"
+                      height="70"
+                      viewBox="0 0 70 70"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#filter0_bdi_443_243)">
+                        <circle
+                          cx="33"
+                          cy="33"
+                          r="25"
+                          fill="white"
+                          fill-opacity="0.2"
+                          shape-rendering="crispEdges"
+                        />
+                        <circle
+                          cx="33"
+                          cy="33"
+                          r="24.5"
+                          stroke="white"
+                          shape-rendering="crispEdges"
+                        />
+                      </g>
+                      <path
+                        d="M36.7072 33.7071C37.0977 33.3166 37.0977 32.6834 36.7072 32.2929L30.3432 25.9289C29.9527 25.5384 29.3196 25.5384 28.929 25.9289C28.5385 26.3195 28.5385 26.9526 28.929 27.3431L34.5859 33L28.929 38.6569C28.5385 39.0474 28.5385 39.6805 28.929 40.0711C29.3196 40.4616 29.9527 40.4616 30.3432 40.0711L36.7072 33.7071ZM36 34H36.0001V32H36V34Z"
+                        fill="white"
+                      />
+                      <defs>
+                        <filter
+                          id="filter0_bdi_443_243"
+                          x="0"
+                          y="0"
+                          width="70"
+                          height="70"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feGaussianBlur
+                            in="BackgroundImageFix"
+                            stdDeviation="2"
+                          />
+                          <feComposite
+                            in2="SourceAlpha"
+                            operator="in"
+                            result="effect1_backgroundBlur_443_243"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dx="2" dy="2" />
+                          <feGaussianBlur stdDeviation="5" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="effect1_backgroundBlur_443_243"
+                            result="effect2_dropShadow_443_243"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect2_dropShadow_443_243"
+                            result="shape"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dx="3.10909" dy="3.10909" />
+                          <feGaussianBlur stdDeviation="2.33182" />
+                          <feComposite
+                            in2="hardAlpha"
+                            operator="arithmetic"
+                            k2="-1"
+                            k3="1"
+                          />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="shape"
+                            result="effect3_innerShadow_443_243"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section tezis_section">
+        <div class="container tezis__container">
+          <ul class="tezis__list">
+            <li class="tezis__item tezis__item_1">
+              <h3 class="tezis__title">
+                <span class="tezis__title_top">Более</span>
+                <span class="tezis__title_center">2000</span>
+                <span class="tezis__title_bottom">клиентов</span>
+              </h3>
+              <ul class="tezis__item_list">
+                <li class="tezis__item_item">Shosh Avenue Hotel</li>
+                <li class="tezis__item_item">NADEJNIY BUXGALTER</li>
+                <li class="tezis__item_item">HAPPY LIFE</li>
+                <li class="tezis__item_item">BASE SPARE PART</li>
+                <li class="tezis__item_item">Alliance Hotel Tashkent</li>
+                <li class="tezis__item_item">STROY XOLOD TASHKENT</li>
+                <li class="tezis__item_item">ALPHA MINING GROUP ASIA</li>
+                <li class="tezis__item_item">Well dental</li>
+                <li class="tezis__item_item">TOEFL ITP</li>
+                <li class="tezis__item_item">Amirbek shifo</li>
+                <li class="tezis__item_item">DOTRIP</li>
+                <li class="tezis__item_item">Master Klass</li>
+                <li class="tezis__item_item">ZEN ECOSTIRKA</li>
+                <li class="tezis__item_item">FISHVILLE</li>
+                <li class="tezis__item_item">Sifatli Stom plyus</li>
+                <li class="tezis__item_item">MISO</li>
+                <li class="tezis__item_item">UNDERGROUND GYM</li>
+                <li class="tezis__item_item">Mehribon Shifo</li>
+                <li class="tezis__item_item">Prestige taxi</li>
+                <li class="tezis__item_item">Энергоаудит</li>
+                <li class="tezis__item_item">Veronkauff</li>
+                <li class="tezis__item_item">Health & Beauty Clinic</li>
+                <li class="tezis__item_item">Эстонский дом авторской куклы</li>
+                <li class="tezis__item_item">AutoHelp service</li>
+                <li class="tezis__item_item">Golden Wings</li>
+                <li class="tezis__item_item">Косметичка Алёны Погребняк</li>
+                <li class="tezis__item_item">
+                  Агент по недвижимости Ольга Третьякова
+                </li>
+                <li class="tezis__item_item">Олимпия Учебный центр</li>
+                <li class="tezis__item_item">Sense</li>
+                <li class="tezis__item_item">Sense FONALaser</li>
+                <li class="tezis__item_item">GLOBALS.PRO</li>
+                <li class="tezis__item_item">Laboratoroff</li>
+                <li class="tezis__item_item">Честер</li>
+                <li class="tezis__item_item">Ленторг</li>
+                <li class="tezis__item_item">Rus2Design</li>
+                <li class="tezis__item_item">Отель Каньон</li>
+                <li class="tezis__item_item">Тур Портал Дагестан</li>
+                <li class="tezis__item_item">Afzalbek Stom</li>
+                <li class="tezis__item_item">Taksim kebab</li>
+                <li class="tezis__item_item">AB Group Холдинг</li>
+                <li class="tezis__item_item">Rayhon</li>
+                <li class="tezis__item_item">Crystal FD dental clinic</li>
+                <li class="tezis__item_item">GIRLPOWER</li>
+                <li class="tezis__item_item">Buxoro Gullari</li>
+                <li class="tezis__item_item">SORIZ VACCINATION CENTER</li>
+                <li class="tezis__item_item">Floyr</li>
+                <li class="tezis__item_item">Buxoriy Restaurant</li>
+                <li class="tezis__item_item">PROFRESURS</li>
+                <li class="tezis__item_item">Perfect Med Spa</li>
+                <li class="tezis__item_item">Bo'ston hotel</li>
+                <li class="tezis__item_item">Стоматология Насимова</li>
+                <li class="tezis__item_item">Fizelli</li>
+                <li class="tezis__item_item">Sayohat hotel</li>
+                <li class="tezis__item_item">Мир цветов</li>
+                <li class="tezis__item_item">Iftixor dental clinic</li>
+                <li class="tezis__item_item">Nasimov World</li>
+                <li class="tezis__item_item">Olson</li>
+                <li class="tezis__item_item">Perfect Hair</li>
+                <li class="tezis__item_item">Etalon Dental</li>
+                <li class="tezis__item_item">Sierra</li>
+                <li class="tezis__item_item">Infomedic</li>
+                <li class="tezis__item_item">AutoHelp service</li>
+                <li class="tezis__item_item">Med Mental Service</li>
+                <li class="tezis__item_item">Zilol-Baxt</li>
+                <li class="tezis__item_item">Tashkent textile</li>
+                <li class="tezis__item_item">Bahor Plastics</li>
+                <li class="tezis__item_item">We Care</li>
+                <li class="tezis__item_item">Crest</li>
+                <li class="tezis__item_item">Black Time Coffee</li>
+                <li class="tezis__item_item">Ellada travel</li>
+                <li class="tezis__item_item">BePop</li>
+                <li class="tezis__item_item">Logo Balakay</li>
+                <li class="tezis__item_item">Gratus</li>
+                <li class="tezis__item_item">Аксидиа</li>
+              </ul>
+            </li>
+            <li class="tezis__item tezis__item_2">
+              <h3 class="tezis__title">
+                <span class="tezis__title_top">Готовность</span>
+                <span class="tezis__title_center">2 недели</span>
+              </h3>
+            </li>
+            <li class="tezis__item tezis__item_3">
+              <h3 class="tezis__title">
+                <span class="tezis__title_top tezis__title_top_invis"
+                  >Готовность</span
+                >
+                <span class="tezis__title_center">любые</span>
+                <span class="tezis__title_bottom">тематики</span>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section questions__section">
+        <div class="questions__title_block">
+          <h2 class="questions__title">
+              <span class="questions__title_left"></span>
+              <span class="questions__title_center">Отвечаем на вопросы</span>
+              <span class="questions__title_right"></span>
+          </h2>
+        </div>
+        <div class="questions__block">
+          <ul class="questions__list">
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Как узнать стоимость сайта по блокам, если неизвестно
+                  количество и содержание блока?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Свяжитесь с нашим клиентским менеджером. Он поможет вам
+                  определить темы, которые можно рассмотреть на вашем сайте, и
+                  предложит варианты расчеты стоимости по блокам.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Как определить общее время работы, если часть услуг
+                  оплачивается почасовой?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Обычно клиентский менеджер ориентирует по времени. Разбивка по
+                  часам не превышает 10-15% от согласованного времени работы.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Почему оплата за мобильный дизайн отдельно?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Дизайн мобильной версии требует более детального
+                  прогнозирования ширины экрана и оптимизации интерфейса под
+                  мобильные платформы. Этот процесс включает в себя перенос и
+                  адаптацию элементов пользовательского интерфейса. Разработка и
+                  реализация мобильной версии рассматриваются как
+                  самостоятельная и отдельно оплачиваемая задача, учитывая
+                  уникальные требования к ее дизайну.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Будет ли мой сайт оптимизирован для поисковых систем (SEO)?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Да, мы оптимизируем ваш сайт для поисковых систем (SEO), чтобы
+                  улучшить его видимость и рейтинг в результатах поисковых
+                  систем, таких как Google и Яндекс. Наша команда экспертов по
+                  SEO использует передовые методы.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Сколько бесплатных правок в дизайн включено в стандартную
+                  стоимость?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Обычно предусмотрено два раунда правок в дизайне, что, как
+                  правило, достаточно для удовлетворения потребностей клиента.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Как поступить, если мне не понравился готовый дизайн даже
+                  после внесенных правок?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Это происходит крайне редко, однако в случае заказа по
+                  утвержденному ТЗ с клиентом, дополнительные изменения дизайна
+                  требуют дополнительной оплаты за создание второго варианта
+                  дизайна.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Будет ли доплата за добавление информации на сайт после
+                  завершения работы?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Да, каждое дополнительный блок или информация требует
+                  дополнительной оплаты.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Как определить стоимость создания многостаночного сайта с
+                  различными блоками?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Для определения стоимости многостраничного сайта с различными
+                  страницами, необходимо учитывать каждый блок на каждой
+                  странице, за исключением стандартно используемых типовых
+                  блоков.
+                </p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_front absolute">
+                <p class="questions__item_text">
+                  Уменьшится ли стоимость при небольшом редизайне существующего
+                  сайта?
+                </p>
+              </div>
+              <div class="questions__item_back absolute">
+                <p class="questions__item_text">
+                  Уменьшение стоимости не предусматривается, поскольку мы
+                  разрабатываем новый дизайн в каждом случае. Однако, при
+                  минимальных изменениях, мы готовы обсудить возможность оплаты
+                  за дизайн и верстку почасово с нашим менеджером.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contact__section">
+        <div class="container contact__container">
+          <div class="contact__block">
+            <h3 class="contact__title">связаться с&nbsp;менеджером</h3>
+            <ul class="tarif__contact_list">
+              <li class="tarif__contact_item">
+                <a href="/" class="tarif__contact_tg">
+                  <svg
+                    class="tarif__svg_tg"
+                    width="39"
+                    height="33"
+                    viewBox="0 0 39 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M35.1473 0.68687C30.0824 2.80238 8.35761 11.8727 2.35462 14.3458C-1.66947 15.9299 0.683995 17.4138 0.683995 17.4138C0.683995 17.4138 4.12138 18.6002 7.06486 19.4925C10.0084 20.3848 11.5795 19.3922 11.5795 19.3922L25.4219 9.98776C30.331 6.62233 29.1543 9.39287 27.9742 10.5826C25.4219 13.156 21.1989 17.2132 17.6654 20.4818C16.0942 21.8687 16.8798 23.0551 17.5693 23.65C20.1216 25.829 27.0925 30.2839 27.4836 30.578C29.5587 32.0586 33.6391 34.1908 34.259 29.6857L36.7119 14.1452C37.4975 8.89825 38.2831 4.04896 38.3825 2.66201C38.6775 -0.703417 35.144 0.683528 35.144 0.683528L35.1473 0.68687Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="tarif__contact_item">
+                <a href="/" class="tarif__contact_wa">
+                  <svg
+                    class="tarif__svg_wa"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M35.7999 17.3474C35.7999 26.8139 28.0637 34.4936 18.5205 34.4936C15.4914 34.4936 12.6438 33.7192 10.1672 32.3599L0.599854 35.4012L3.71772 26.2009C2.14467 23.6154 1.24117 20.5863 1.24117 17.3474C1.24117 7.87685 8.97735 0.201172 18.5205 0.201172C28.0637 0.201172 35.7999 7.87685 35.7999 17.3474ZM18.5205 2.93182C10.5101 2.93182 3.99199 9.39746 3.99199 17.3474C3.99199 20.5016 5.02052 23.4218 6.75894 25.7975L4.94389 31.1499L10.5262 29.3752C12.8212 30.8797 15.568 31.759 18.5205 31.759C26.531 31.759 33.045 25.2933 33.045 17.3434C33.045 9.39343 26.5269 2.92779 18.5205 2.92779V2.93182ZM27.2449 21.2962C27.136 21.1187 26.8536 21.0138 26.4342 20.8041C26.0106 20.5943 23.9253 19.5779 23.5381 19.4367C23.1509 19.2956 22.8645 19.227 22.5862 19.6465C22.3039 20.066 21.4932 21.0138 21.2431 21.2962C20.9971 21.5785 20.751 21.6108 20.3275 21.401C19.904 21.1913 18.5366 20.7476 16.9192 19.3157C15.6608 18.1985 14.8097 16.8271 14.5637 16.4036C14.3176 15.9841 14.5395 15.7582 14.7492 15.5485C14.9388 15.3589 15.1727 15.0564 15.3865 14.8144C15.6003 14.5684 15.6689 14.3909 15.81 14.1126C15.9512 13.8302 15.8826 13.5882 15.7737 13.3785C15.6689 13.1687 14.8218 11.0996 14.4669 10.2566C14.116 9.41763 13.761 9.44989 13.515 9.44989C13.2689 9.44989 12.8132 9.5225 12.8132 9.5225C12.8132 9.5225 11.9661 9.62737 11.5749 10.0468C11.1877 10.4663 10.0946 11.4828 10.0946 13.5519C10.0946 15.6211 11.6112 17.6177 11.8209 17.896C12.0347 18.1783 14.7492 22.5586 19.057 24.2406C23.3647 25.9225 23.3647 25.3619 24.1391 25.2893C24.9135 25.2207 26.6439 24.2729 26.9988 23.2927C27.3538 22.3126 27.3538 21.4696 27.2489 21.2962H27.2449Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block">
+          <figure class="footer__figure">
+            <picture class="footer__picture">
+              <img
+                src="./src/logo.png"
+                alt=""
+                class="footer__img footer__logo_img"
+              />
+            </picture>
+          </figure>
+          <copy class="footer__copy"
+            >Создание, поддержка и продвижение сайтов</copy
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 1200,
+        // Размер шага в пикселях
+        stepSize: 75,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 15,
+        // Максимальное ускорение
+        accelerationMax: 0.8,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+      });
+    </script>
+
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script> -->
+    <!-- <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script defer src="./libs/gsap/gsap.min.js"></script>
+    <script defer src="./libs/gsap/ScrollTrigger.min.js"></script>
+
+    <script defer src="./scripts/scroll.js"></script>
+    <script defer src="./scripts/app.js"></script>
+    <script defer src="./scripts/tarif-slider.js"></script>
+    <script defer src="./scripts/flip-questions.js"></script>
+  </body>
+</html>
