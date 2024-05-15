@@ -14,12 +14,26 @@
     />
   </head>
   <body>
+    <!-- прелоадер -->
+    <div class="loaderArea">
+      <div class="loader">
+        <figure class="loader__figure">
+          <picture class="loader__picture">
+            <img src="./src/rocket.webp" alt="Ракета" class="loader__img" />
+          </picture>
+        </figure>
+      </div>
+    </div>
+
     <div class="scene">
       <header class="header">
         <div class="header__layer_1"></div>
         <nav class="header__nav nav header__container">
-          <ul class="nav__list_left">
-            <li class="nav__item_left nav__logo">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <div class="burger__border"></div>
+          <ul class="nav__list_left menu-list">
+            <li class="nav__item_left nav__logo menu-item">
               <a href="/" class="nav__link">
                 <figure class="nav__figure">
                   <picture class="nav__picture">
@@ -32,13 +46,13 @@
                 </figure>
               </a>
             </li>
-            <li class="nav__item_left nav__site">
+            <li class="nav__item_left nav__site menu-item">
               <a href="/" class="nav__link">Сайт</a>
             </li>
-            <li class="nav__item_left nav__seo">
+            <li class="nav__item_left nav__seo menu-item">
               <a href="/" class="nav__link">Seo</a>
             </li>
-            <li class="nav__item_left nav__ads">
+            <li class="nav__item_left nav__ads menu-item">
               <a href="/" class="nav__link">Реклама</a>
             </li>
           </ul>
@@ -105,8 +119,8 @@
             Мы создали много разнообразных сайтов и подписка позволяет запустить
             все их типы: корпоративные сайты с блогом или новостным разделом,
             личный сайт, витрины, визитки, портфолио и многие другие, как
-            <span style="font-weight: 700">одностраничные</span>, так и
-            <span style="font-weight: 700">многостраничные</span>.
+            <span style="font-weight: 900">одностраничные</span>, так и
+            <span style="font-weight: 900">многостраничные</span>.
           </p>
           <div class="portfolio__title_block">
             <div class="portfolio__title">
@@ -293,75 +307,87 @@
             </div>
             <ul class="portfolio__types_list">
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/med.webp"
-                      alt="Медицина"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/med.webp"
+                        alt="Медицина"
+                        class="portfolio__img img__med"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Медицина</span>
               </li>
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/hor.webp"
-                      alt="Horeca"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round active__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/hor.webp"
+                        alt="Horeca"
+                        class="portfolio__img"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Horeca</span>
               </li>
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/tour.webp"
-                      alt="Туризм"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/tour.webp"
+                        alt="Туризм"
+                        class="portfolio__img img__tour"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Туризм</span>
               </li>
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/beauty.webp"
-                      alt="Красота"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/beauty.webp"
+                        alt="Красота"
+                        class="portfolio__img"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Красота</span>
               </li>
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/prom.webp"
-                      alt="Промышленность"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/prom.webp"
+                        alt="Промышленность"
+                        class="portfolio__img img__prom"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Промышленность</span>
               </li>
               <li class="portfolio__types_item">
-                <figure class="portfolio__figure">
-                  <picture class="portfolio__picture">
-                    <img
-                      src="./src/over.webp"
-                      alt="Другое"
-                      class="portfolio__img"
-                    />
-                  </picture>
-                </figure>
+                <div class="portfolio__round">
+                  <figure class="portfolio__figure">
+                    <picture class="portfolio__picture">
+                      <img
+                        src="./src/over.webp"
+                        alt="Другое"
+                        class="portfolio__img img__over"
+                      />
+                    </picture>
+                  </figure>
+                </div>
                 <span class="portfolio__types_text">Другое</span>
               </li>
             </ul>
@@ -443,8 +469,8 @@
           <ul class="unique__list">
             <li class="unique__item unique_1 container">
               <div class="unique__text_block unique_text_block_1">
-                <h3 class="unique__title">Уверенность</h3>
-                <p class="unique__descr">
+                <h3 class="unique__title unique__title_1">Уверенность</h3>
+                <p class="unique__descr unique__descr_1">
                   Мы решаем все технические проблемы, включая регистрацию,
                   оплату доменов, хостинга и SSL-сертификата. Просто
                   расслабьтесь и ни за что не переживайте.
@@ -453,8 +479,8 @@
             </li>
             <li class="unique__item unique_2 container">
               <div class="unique__text_block unique_text_block_2">
-                <h3 class="unique__title">Уникальность</h3>
-                <p class="unique__descr">
+                <h3 class="unique__title unique__title_2">Уникальность</h3>
+                <p class="unique__descr unique__descr_2">
                   Несмотря на огромный бэкграунд, каждый новый сайт имеет
                   индивидуальный дизайн. Удобная структура сайтов уже продумана,
                   но набор блоков и страниц составлен с учетом вашей тематики и
@@ -464,8 +490,8 @@
             </li>
             <li class="unique__item unique_3 container">
               <div class="unique__text_block unique_text_block_3">
-                <h3 class="unique__title">Обновление</h3>
-                <p class="unique__descr">
+                <h3 class="unique__title unique__title_3">Обновление</h3>
+                <p class="unique__descr unique__descr_3">
                   Мы обеспечиваем регулярное обновление контента, добавление
                   новостей клиента, акционных слайдов и другого материала.
                   Просто дайте знать, что вам нужно разместить.
@@ -474,8 +500,8 @@
             </li>
             <li class="unique__item unique_4 container">
               <div class="unique__text_block unique_text_block_4">
-                <h3 class="unique__title">Контроль</h3>
-                <p class="unique__descr">
+                <h3 class="unique__title unique__title_4">Контроль</h3>
+                <p class="unique__descr unique__descr_4">
                   Наши сайты проходят еженедельный мониторинг и проверку на
                   наличие технических неисправностей, обеспечивая их стабильную
                   работу. Занимайтесь своими делами спокойно.
@@ -487,11 +513,11 @@
       </section>
 
       <section class="section tarif__section">
-        <!-- <figure class="tarif__figure">
+        <figure class="tarif__figure">
           <picture class="tarif__picture">
             <img src="./src/tarif-bg.webp" alt="" class="tarif__img" />
           </picture>
-        </figure> -->
+        </figure>
         <div class="tarif__title_block">
           <div class="tarif__title">
             <h2 class="tarif__title_text">
@@ -513,7 +539,10 @@
                   />
                   <h3 class="slide__title">Pro</h3>
                   <div class="slide__text_block">
-                    <p class="slide__text" style="margin-bottom: 12px;">Многостраничный сайт с ограничением на количество страниц и блоков на каждой странице</p>
+                    <p class="slide__text" style="margin-bottom: 12px">
+                      Многостраничный сайт с ограничением на количество страниц
+                      и блоков на каждой странице
+                    </p>
                     <p class="slide__text">Максимум 4 страницы и 16 блоков</p>
                   </div>
                 </div>
@@ -527,7 +556,10 @@
                   />
                   <h3 class="slide__title">Promax</h3>
                   <div class="slide__text_block">
-                    <p class="slide__text">Многостраничный сайт с возможностью значительного расширения числа страниц и блоков.</p>
+                    <p class="slide__text">
+                      Многостраничный сайт с возможностью значительного
+                      расширения числа страниц и блоков.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -540,8 +572,12 @@
                   />
                   <h3 class="slide__title">Optimal</h3>
                   <div class="slide__text_block">
-                    <p class="slide__text" style="margin-bottom: 12px;">Одностраничный сайт: ограничение по количеству блоков.</p>
-                    <p class="slide__text" style="text-transform: uppercase;">Максимум 10 блоков</p>
+                    <p class="slide__text" style="margin-bottom: 12px">
+                      Одностраничный сайт: ограничение по количеству блоков.
+                    </p>
+                    <p class="slide__text" style="text-transform: uppercase">
+                      Максимум 10 блоков
+                    </p>
                   </div>
                 </div>
               </div>
@@ -930,7 +966,7 @@
             <li class="tezis__item tezis__item_2">
               <h3 class="tezis__title">
                 <span class="tezis__title_top">Готовность</span>
-                <span class="tezis__title_center">2 недели</span>
+                <span class="tezis__title_center">2&nbsp;недели</span>
               </h3>
             </li>
             <li class="tezis__item tezis__item_3">
@@ -948,9 +984,11 @@
       <section class="section questions__section">
         <div class="questions__title_block">
           <h2 class="questions__title">
-              <span class="questions__title_left"></span>
-              <span class="questions__title_center">Отвечаем на вопросы</span>
-              <span class="questions__title_right"></span>
+            <span class="questions__title_left"></span>
+            <span class="questions__title_center"
+              >Отвечаем на&nbsp;вопросы</span
+            >
+            <span class="questions__title_right"></span>
           </h2>
         </div>
         <div class="questions__block">
@@ -1196,15 +1234,22 @@
         touchpadSupport: true,
       });
     </script>
+    <!-- jquery для прелоадера -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- скрипт для предлоадера -->
+    <script>
+      $(window).on("load", function () {
+        ($preloader = $(".loaderArea")), ($loader = $preloader.find(".loader"));
+        $loader.fadeOut();
+        $preloader.delay(350).fadeOut("slow");
+      });
+    </script>
 
-    <!-- <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    ></script> -->
-    <!-- <script
-      defer
-      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
-    ></script> -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
@@ -1217,5 +1262,6 @@
     <script defer src="./scripts/app.js"></script>
     <script defer src="./scripts/tarif-slider.js"></script>
     <script defer src="./scripts/flip-questions.js"></script>
+    <script defer src="./scripts/toggle.js"></script>
   </body>
 </html>

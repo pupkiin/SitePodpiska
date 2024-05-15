@@ -5,13 +5,13 @@ if (width < 1750) {
   navPaddingTop = 20;
 }
 
-if (ScrollTrigger.isTouch !== 1) {
+if (ScrollTrigger.isTouch !== 1 && width > 999) {
   // header
   gsap.fromTo('.header__layer_1', { opacity: 2, scale: 1 }, {
     opacity: 0, scale: 1.49,
     scrollTrigger: {
       trigger: '.header__layer_1',
-      start: "200",
+      start: "0",
       end: 'bottom -130%+=100px',
       scrub: true,
     }
@@ -30,7 +30,6 @@ if (ScrollTrigger.isTouch !== 1) {
   gsap.fromTo('.header__container', {}, {
     'padding-top': navPaddingTop,
     'padding-bottom': navPaddingTop,
-    // 'background-color': '#0D0D0D',
     scrollTrigger: {
       trigger: '.portfolio__title_text',
       end: 'center 55%+=100',
@@ -47,6 +46,48 @@ if (ScrollTrigger.isTouch !== 1) {
       scrub: true,
     }
   })
+
+  // header images in navigation block
+  gsap.fromTo('.nav__logo', {}, {
+    'background-image': 'url(./src/nav2-0.webp)',
+    scrollTrigger: {
+      trigger: '.portfolio__section',
+      start: 'top 20%',
+      end: '100',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.nav__site', {}, {
+    'background-image': 'url(./src/nav2-1.webp)',
+    scrollTrigger: {
+      trigger: '.portfolio__section',
+      start: 'top 20%',
+      end: '100',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.nav__seo', {}, {
+    'background-image': 'url(./src/nav2-2.webp)',
+    scrollTrigger: {
+      trigger: '.portfolio__section',
+      start: 'top 20%',
+      end: '100',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.nav__ads', {}, {
+    'background-image': 'url(./src/nav2-3.webp)',
+    scrollTrigger: {
+      trigger: '.portfolio__section',
+      start: 'top 20%',
+      end: '100',
+      scrub: true,
+    }
+  })
+
 
   //header item left
   gsap.fromTo('.nav__item_left', {}, {
@@ -109,7 +150,18 @@ if (ScrollTrigger.isTouch !== 1) {
 
   //
 
-  // portfolio descr
+  // portfolio descr appearance
+  gsap.fromTo('.portfolio__descr', { opacity: 0, scale: 0.5 }, {
+    opacity: 1, scale: 1,
+    scrollTrigger: {
+      trigger: '.portfolio__container',
+      start: 'top 85%',
+      end: 'top -10%',
+      scrub: true,
+    }
+  })  
+
+  // portfolio descr out
   gsap.fromTo('.portfolio__descr', { opacity: 1 }, {
     opacity: 0,
     scrollTrigger: {
@@ -153,18 +205,18 @@ if (ScrollTrigger.isTouch !== 1) {
 
 
   // button block
-  gsap.fromTo('.portfolio__button_block', { opacity: -1.2 }, {
+  gsap.fromTo('.portfolio__button_block', { opacity: -2 }, {
     opacity: 1,
     scrollTrigger: {
-      trigger: '.portfolio__button_block',
+      trigger: '.portfolio__title_text',
       scrub: true,
     }
   })
 
-  gsap.fromTo('.portfolio__types_list', { opacity: -1.7 }, {
+  gsap.fromTo('.portfolio__types_list', { opacity: -2 }, {
     opacity: 1,
     scrollTrigger: {
-      trigger: '.portfolio__button_block',
+      trigger: '.portfolio__title_text',
       scrub: true,
     }
   })
@@ -268,8 +320,8 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
 
-  // blocks` text
-  gsap.fromTo('.unique_text_block_1', { x: -400, opacity: 0.2 }, {
+  // blocks` title
+  gsap.fromTo('.unique__title_1', { x: -400, opacity: 0.2 }, {
     opacity: 2, x: 0,
     scrollTrigger: {
       trigger: '.unique__item',
@@ -277,7 +329,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
 
-  gsap.fromTo('.unique_text_block_2', { x: 400, opacity: 0.2 }, {
+  gsap.fromTo('.unique__title_2', { x: 400, opacity: 0.2 }, {
     opacity: 2, x: 0,
     scrollTrigger: {
       trigger: '.unique_1',
@@ -285,7 +337,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
 
-  gsap.fromTo('.unique_text_block_3', { x: 400, opacity: 0.2 }, {
+  gsap.fromTo('.unique__title_3', { x: 400, opacity: 0.2 }, {
     opacity: 2, x: 0,
     scrollTrigger: {
       trigger: '.unique_2',
@@ -293,7 +345,40 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
 
-  gsap.fromTo('.unique_text_block_4', { x: -400, opacity: 0.2 }, {
+  gsap.fromTo('.unique__title_4', { x: -400, opacity: 0.2 }, {
+    opacity: 2, x: 0,
+    scrollTrigger: {
+      trigger: '.unique_3',
+      scrub: true,
+    }
+  })
+
+  // blocks` text descr
+  gsap.fromTo('.unique__descr_1', { x: -700, opacity: 0.2 }, {
+    opacity: 2, x: 0,
+    scrollTrigger: {
+      trigger: '.unique__item',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.unique__descr_2', { x: 700, opacity: 0.2 }, {
+    opacity: 2, x: 0,
+    scrollTrigger: {
+      trigger: '.unique_1',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.unique__descr_3', { x: 700, opacity: 0.2 }, {
+    opacity: 2, x: 0,
+    scrollTrigger: {
+      trigger: '.unique_2',
+      scrub: true,
+    }
+  })
+
+  gsap.fromTo('.unique__descr_4', { x: -700, opacity: 0.2 }, {
     opacity: 2, x: 0,
     scrollTrigger: {
       trigger: '.unique_3',
@@ -348,8 +433,18 @@ if (ScrollTrigger.isTouch !== 1) {
   }) 
 
   // slider appiarence
+  gsap.fromTo('.mySwiper', { scale: 1.2 }, {
+    scale: 1,
+    scrollTrigger: {
+      trigger: '.swiper',
+      start: 'top 53%',
+      end: 'bottom 85%',
+      scrub: true,
+    }
+  }) 
+
   gsap.fromTo('.slide__1', { opacity: 0 }, {
-    opacity: 1,
+    opacity: 1.2,
     scrollTrigger: {
       trigger: '.swiper',
       start: 'top 53%',
@@ -358,7 +453,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   }) 
   gsap.fromTo('.slide__2', { opacity: 0 }, {
-    opacity: 1,
+    opacity: 1.2,
     scrollTrigger: {
       trigger: '.swiper',
       start: 'top 56%',
@@ -367,7 +462,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   }) 
   gsap.fromTo('.slide__3', { opacity: 0 }, {
-    opacity: 1,
+    opacity: 1.2,
     scrollTrigger: {
       trigger: '.swiper',
       start: 'top 53%',
@@ -470,7 +565,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
   // text block
-  gsap.fromTo('.pages__item_link_left', { x: 400, opacity: -0.1 }, {
+  gsap.fromTo('.pages__item_link_left', { x: 200, opacity: -0.1 }, {
     opacity: 1, x: 0,
     scrollTrigger: {
       trigger: '.pages__list',
@@ -479,7 +574,7 @@ if (ScrollTrigger.isTouch !== 1) {
     }
   })
 
-  gsap.fromTo('.pages__item_link_right', { x: -400, opacity: -0.1 }, {
+  gsap.fromTo('.pages__item_link_right', { x: -200, opacity: -0.1 }, {
     opacity: 1, x: 0,
     scrollTrigger: {
       trigger: '.pages__list',
@@ -667,15 +762,15 @@ if (ScrollTrigger.isTouch !== 1) {
   }) 
 
   // questions item
-  gsap.fromTo('.questions__item', { opacity: -1, y: 400 }, {
-    opacity: 1, y: 0,
-    scrollTrigger: {
-      trigger: '.questions__title_block',
-      start: 'top 80%',
-      // end: 'bottom 170%',
-      scrub: true,
-    }
-  }) 
+  // gsap.fromTo('.questions__item', { opacity: -1, y: 400 }, {
+  //   opacity: 1, y: 0,
+  //   scrollTrigger: {
+  //     trigger: '.questions__title_block',
+  //     start: 'top 80%',
+  //     // end: 'bottom 170%',
+  //     scrub: true,
+  //   }
+  // }) 
   // questions item text
   // gsap.fromTo('.questions__item_text', { opacity: 0, y: 500 }, {
   //   opacity: 1, y: 0,
@@ -715,19 +810,19 @@ if (ScrollTrigger.isTouch !== 1) {
   }) 
 
   // title
-  gsap.fromTo('.contact__title', { opacity: 0, y: 600 }, {
-    opacity: 1, y: 0,
+  gsap.fromTo('.contact__title', { opacity: -0.4, y: 1500 }, {
+    opacity: 1, y: -200,
     scrollTrigger: {
-      trigger: '.contact__section',
-      start: 'top 280%',
+      trigger: '.footer__container',
+      start: 'top 380%',
       // end: 'bottom 170%',
       scrub: true,
     }
   }) 
 
   // wa tg
-  gsap.fromTo('.tarif__contact_item', { opacity: -0.5, y: 500 }, {
-    opacity: 1, y: 0,
+  gsap.fromTo('.tarif__contact_item', { opacity: -0.5, y: 2000 }, {
+    opacity: 1, y: -200,
     scrollTrigger: {
       trigger: '.contact__section',
       start: 'top 280%',
